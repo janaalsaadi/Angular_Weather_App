@@ -1,0 +1,107 @@
+
+    button{
+      background-color: lightseagreen;
+      width: 80px;
+    }
+    select{
+      width: 80px;
+    }
+  
+    .Infoheader{
+      display: flex;
+      font-weight: bold;
+      justify-content: start;
+      height: auto;
+      max-width: 60%;
+  
+      margin: auto;
+      
+    }
+  
+    span{
+      width: auto;
+      margin: 20px;
+    }
+  
+    div.ch:nth-child(odd) { /* Selects only odd elements */
+      display: flex;
+      font-weight: bold;
+      justify-content: start;
+      height: auto;
+      max-width: 60%;
+      margin: auto;
+      background-color: lightgray;   
+     
+  }
+  div.ch:nth-child(even) { /* Selects only odd elements */
+    display: flex;
+    font-weight: bold;
+    justify-content: start;
+    height: auto;
+    max-width: 60%;
+    margin: auto;
+  }
+  
+  .main{
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    
+  }
+  
+  select , input {
+    outline:none;
+    border: none;
+    border-bottom:1px solid gray;
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  
+  label{
+    color:gray;
+    text-align: left;
+  }
+  
+  .ListItem{
+      text-align: left;
+      word-break: break-all;
+  }
+  
+  .ListIcon{
+    display : flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  
+  h1{
+    text-align: left;
+    margin-left: 320px;
+    margin-top: 100px; 
+    color: gray;
+  }
+  
+  .divInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 40%;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  .WeatherCards{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    padding-top: 200px;
+}
+
+@media only screen and (max-width: 760px) {
+    .WeatherCards{
+       flex-direction: column;
+       
+    }
+  }

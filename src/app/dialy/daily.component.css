@@ -1,0 +1,36 @@
+.card{
+    border: 1px solid white;
+    padding: 20px;
+    margin: 5px;  
+    width: 100%;
+}
+
+.myText{
+    text-align: center;
+}
+
+
+.customStyles{
+    width:40%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform:translate(-50%, -50%);
+    border:5px solid gray;
+    color:white;
+    background-image: linear-gradient(to right, pink, lightblue)
+}
+
+@media only screen and (max-width: 760px) {
+    .card{
+      width: 90%;
+      word-break: break-all;
+       
+    }
+    .customStyles{
+        width:70%;
+    height: 70%;
+    }
+}

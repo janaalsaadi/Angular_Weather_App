@@ -1,0 +1,26 @@
+
+         <div  class="card"  (click) = "onchange()">
+            <div  style="padding-left:30%">
+            <img src={{mySrc}} /> </div>  
+            <div class="myText">{{info}} </div> 
+            <div class="myText"> Avg.Humidity {{Humidity}} </div> 
+            <div class="myText">{{day}}</div>    
+            </div>
+
+
+          <div class="chart-wrapper" style="background-color: white;" *ngIf="show">
+              <label style="color: red;" (click)= "onchange()" >X</label>
+            <canvas baseChart 
+            width="500px"
+            height="500px"
+                [datasets]="lineChartData" 
+                [labels]="lineChartLabels" 
+                [options]="lineChartOptions"
+                [colors]="lineChartColors" 
+                [legend]="lineChartLegend" 
+                [chartType]="lineChartType" 
+                [plugins]="lineChartPlugins">
+            </canvas>
+        </div>
+
+       

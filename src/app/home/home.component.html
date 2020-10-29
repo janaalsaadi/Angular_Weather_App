@@ -1,0 +1,11 @@
+
+ <div class="WeatherCards">
+<app-daily
+*ngFor="let  item of list ; let i =index"
+[key]="i"
+[wdats]="item"
+>
+</app-daily>
+
+
+</div>
